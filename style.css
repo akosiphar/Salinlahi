@@ -45,7 +45,7 @@ h2 {
   padding: 10px;
   background-color: white;
   border-radius: 15px;
-  height: auto;
+  height: fit-content;
 }
 
 .tab-buttons {
