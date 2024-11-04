@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagsusulit</title>
+    <style>
+      /* Basic styling for the quiz */
+      .quiz-container {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .timer {
+        font-size: 18px;
+        color: #f00;
+        margin-bottom: 10px;
+      }
+      .question {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .choices {
+        list-style-type: none;
+        padding: 0;
+      }
+      .choices li {
+        margin-bottom: 10px;
+      }
+      .answer-container {
+        margin-top: 20px;
+      }
+
+      /* Styling for the image pop-up */
+      #imagePopup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 2px solid #ccc;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      #popupImage {
+        max-width: 90%; /* Makes the image responsive */
+        max-height: 80vh; /* Ensures the image doesn't overflow the viewport */
+      }
+
+      #overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Darker overlay */
+        z-index: 999;
+      }
+
+      /* Close button styling */
+      #closeImage {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        color: #f00; /* Color for the close button */
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url(mathwallpaper.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    "
+  >
+    <div class="quiz-container">
+      <div id="timer" class="timer"></div>
+      <div id="question" class="question"></div>
+      <ul id="choices" class="choices"></ul>
+
+      <!-- Essay input field and button -->
+      <div id="essayContainer" class="answer-container" style="display: none">
+        <textarea
+          id="essayAnswer"
+          rows="5"
+          cols="30"
+          placeholder="Write your answer here..."
+        ></textarea>
+        <button onclick="submitEssay()">Submit Essay</button>
+      </div>
+
+      <!-- Identification input field and button -->
+      <div
+        id="identificationContainer"
+        class="answer-container"
+        style="display: none"
+      >
+        <input
+          type="text"
+          id="identificationAnswer"
+          placeholder="Type your answer here..."
+        />
+        <button onclick="submitIdentification()">Submit Answer</button>
+      </div>
+
+      <button id="nextButton" onclick="nextQuestion()">Next Question</button>
+      <button
+        id="completeButton"
+        onclick="completeQuiz()"
+        style="display: none"
+      >
+        Complete Quiz
+      </button>
+      <div id="result" style="display: none; margin-top: 20px"></div>
+
+      <!-- Image Pop-Up -->
+      <div id="imagePopup">
+        <span id="closeImage" style="cursor: pointer">&times;</span>
+        <img
+          id="popupImage"
+          src=""
+          alt=""
+          style="max-width: 100%; height: auto"
+        />
+      </div>
+      <div id="overlay"></div>
+    </div>
+
+    <script src="./quiz.js"></script>
+  </body>
+</html>

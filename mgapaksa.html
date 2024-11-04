@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Welcome!</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">SalinLahi</div>
+    </nav>
+
+    <div class="main-flex">
+      <div class="card-flex">
+        <div class="tabs">
+          <!-- Tab Buttons -->
+          <div class="tab-buttons">
+            <button class="tab-button active" onclick="openTab(event, 'tab1')">
+              <h2>Layunin ng Pagaaral</h2>
+            </button>
+            <button class="tab-button" onclick="openTab(event, 'tab2')">
+              <h2>Pagsusulit sa Pagtatasa</h2>
+            </button>
+          </div>
+
+          <!-- Tab Content -->
+          <div class="tab-content" id="tab1">
+            <p>
+              Ang pag-aaral ay mahalaga sa maraming paraan. Una, ito ay
+              nagbibigay sa atin ng kaalaman at kasanayan na kinakailangan natin
+              upang maging magtagumpay sa buhay. Sa pamamagitan ng pag-aaral,
+              natututo tayo ng mga kasanayan sa pagsulat, pagbasa, pag-analyze,
+              at paglutas ng mga problema. Ito rin ang nagbibigay sa atin ng
+              kakayahan na maunawaan ang mga bagay sa paligid natin at magamit
+              ang mga ito upang umunlad.
+            </p>
+            <p>
+              Pangalawa, ang pag-aaral ay nagbubukas ng mga oportunidad sa atin.
+              Sa pamamagitan ng pag-aaral, nagkakaroon tayo ng mas malawak na
+              kaalaman at kasanayan, na nagpapataas ng ating halaga sa merkado
+              ng trabaho.
+            </p>
+            <p>
+              Pangatlo, ang pag-aaral ay nagbibigay ng mga bunga sa buhay. Sa
+              pamamagitan ng pag-aaral, nagkakaroon tayo ng mga kaibigan at mga
+              kaklase na nagiging bahagi ng ating buhay. Maliban dito, natututo
+              rin tayo ng mga bagay na nagpapabuti sa ating kalusugan at
+              kagalingan, tulad ng tamang nutrisyon, ehersisyo, at pag-manage ng
+              stress.
+            </p>
+            <p>
+              Sa kabuuan, mahalaga ang pag-aaral dahil nagbibigay ito ng
+              kaalaman, oportunidad, at mga bunga sa buhay na nagpapabuti sa
+              ating kabuuan na pagkatao.
+            </p>
+          </div>
+          <div class="tab-content" id="tab2" style="display: none">
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <div>
+                <a href="./Agham/aghamtest.html"
+                  ><button class="test-button">
+                    Agham - Simulan ang Pagsusulit
+                  </button></a
+                >
+              </div>
+              <br />
+              <div>
+                <a href="./Esp/esptest.html"
+                  ><button class="test-button">
+                    Esp - Simulan ang Pagsusulit
+                  </button></a
+                >
+              </div>
+              <br />
+              <div>
+                <a href="./Kasaysayan/kasaysayantest.html"
+                  ><button class="test-button">
+                    Kasaysayan - Simulan ang Pagsusulit
+                  </button></a
+                >
+              </div>
+              <br />
+              <div>
+                <a href="./Matematika/mathtest.html"
+                  ><button class="test-button">
+                    Matematika - Simulan ang Pagsusulit
+                  </button></a
+                >
+              </div>
+              <br />
+              <div>
+                <a href="./Panitikan/panitikantest.html"
+                  ><button class="test-button">
+                    Panitikan - Simulan ang Pagsusulit
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="container">
+            <a href="./Agham/aghamstory.html" class="subject">
+              <div class="subject-content">
+                <div class="subject-header">
+                  <h2>Agham</h2>
+                </div>
+                <button class="bookmark-button">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./Esp/espStory.html" class="subject">
+              <div class="subject-content">
+                <div class="subject-header">
+                  <h2>ESP</h2>
+                </div>
+                <button class="bookmark-button">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./Kasaysayan/kasaysayanStory.html" class="subject">
+              <div class="subject-content">
+                <div class="subject-header">
+                  <h2>Kasaysayan</h2>
+                </div>
+                <button class="bookmark-button">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./Matematika/mathStory.html" class="subject">
+              <div class="subject-content">
+                <div class="subject-header">
+                  <h2>Matematika</h2>
+                </div>
+                <button class="bookmark-button">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </div>
+            </a>
+
+            <a href="./Panitikan/panitikanStory.html" class="subject">
+              <div class="subject-content">
+                <div class="subject-header">
+                  <h2>Pampanitikan</h2>
+                </div>
+                <button class="bookmark-button">
+                  <i class="fas fa-bookmark"></i>
+                </button>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div class="image-holder">
+            <h2 class="whitebg">Alintuntunin sa Pagsusulit</h2>
+          </div>
+
+          <h3>
+            1. Maging maingat at sigurado sa pagsasagot dahil isang beses lamang
+            kumuha ng pagsusulit.
+          </h3>
+          <h3>2. Siguraduhing may sapat na kaalaman sa pagsusulit.</h3>
+          <h3>
+            3. Sundin ang inilaang oras sa sa pagsusulit na ibinigay ng guro.
+            (30 minuto)
+          </h3>
+
+          <div style="text-align: center">
+            <a href="test.html">
+              <button class="test-button">Simulan ang Pagsusulit</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <a href="./Shiyimain.html" class="nav-link-1"><i>Home</i></a>
+        </li>
+        <li>
+          <a href="./test.html" class="nav-link-2"><i>Pagsusulit</i></a>
+        </li>
+        <li>
+          <a href="./proyekto.html" class="nav-link-3"><i>Proyekto</i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <script src="script.js"></script>
+  </body>
+</html>

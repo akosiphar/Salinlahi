@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagsusulit</title>
+    <style>
+      /* Basic styling for the quiz */
+      .quiz-container {
+        font-family: Arial, sans-serif;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .timer {
+        font-size: 18px;
+        color: #f00;
+        margin-bottom: 10px;
+      }
+      .question {
+        font-size: 20px;
+        margin-bottom: 15px;
+      }
+      .choices {
+        list-style-type: none;
+        padding: 0;
+      }
+      .choices li {
+        margin-bottom: 10px;
+      }
+      .answer-container {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background-image: url(vintage-textured-watercolor-paper-background.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    "
+  >
+    <div class="quiz-container">
+      <div id="timer" class="timer"></div>
+      <div id="question" class="question"></div>
+      <ul id="choices" class="choices"></ul>
+
+      <!-- Essay input field and button -->
+      <div id="essayContainer" class="answer-container" style="display: none">
+        <textarea
+          id="essayAnswer"
+          rows="5"
+          cols="30"
+          placeholder="Write your answer here..."
+        ></textarea>
+        <button onclick="submitEssay()">Submit Essay</button>
+      </div>
+
+      <!-- Identification input field and button -->
+      <div
+        id="identificationContainer"
+        class="answer-container"
+        style="display: none"
+      >
+        <input
+          type="text"
+          id="identificationAnswer"
+          placeholder="Type your answer here..."
+        />
+        <button onclick="submitIdentification()">Submit Answer</button>
+      </div>
+
+      <button id="nextButton" onclick="nextQuestion()">Next Question</button>
+      <button
+        id="completeButton"
+        onclick="completeQuiz()"
+        style="display: none"
+      >
+        Complete Quiz
+      </button>
+      <div id="result" style="display: none; margin-top: 20px"></div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>

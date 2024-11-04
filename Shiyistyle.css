@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-image: url(Covers/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 30px;
+  transition: filter 0.5s ease-in-out;
+}
+
+body.blurred {
+  filter: blur(10px); /* Apply blur effect */
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  z-index: 111;
+}
+
+.logo {
+  display: flex;
+  font-size: 40px;
+  font-weight: 800;
+  color: #1877f2;
+  letter-spacing: 3px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: flex;
+  position: fixed;
+  bottom: 2em;
+  right: 25em;
+}
+
+.nav-list li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.nav-list li:hover a {
+  color: #eff0f1;
+  text-decoration: underline;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: Arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+}
+
+.links {
+  background-color: white;
+  padding: 2px;
+  border-radius: 10px;
+}
+
+.links a:hover {
+  color: black;
+  transition: 0.4s ease-in-out;
+}
+
+.links a {
+  font-size: 30px;
+  color: #1877f2;
+  margin: 25px 10px;
+}
+
+.text {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80px);
+  justify-content: left;
+  align-items: center;
+  padding: 0 10%;
+  overflow: hidden;
+  font-size: 10px;
+}
+
+.nav-link-1 {
+  color: yellow;
+}
+
+.nav-link-2 {
+  color: red;
+}
+
+.nav-link-3 {
+  color: rgb(22, 102, 223);
+}
+
+.mshs {
+  width: 50%;
+}
+
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: #ffffff;
+}
+
+h1 {
+  display: block;
+  font-size: 7em;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.multitext {
+  color: #007bff;
+  text-transform: capitalize;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+.names {
+  height: 500px;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
